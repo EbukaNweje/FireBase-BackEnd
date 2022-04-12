@@ -1,0 +1,44 @@
+@media(max-width: 900px){
+      .Form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+      }
+      
+      .Title{
+            display: flex;
+            justify-content: center;
+      }
+
+      img {
+            width: 200px;
+      }
+
+      .register{
+            text-align: center;
+      }
+      
+      label{
+            font-size: 15px;
+      }
+
+      input{
+            width: 200px;
+      }
+
+      button{
+            width: 180px;
+      }
+
+      .FormSubmit{
+            width: 250px;
+            height: 40px;
+            padding: 10px;
+      }
+
+      .FormSubmit span{
+            font-size: 15px;
+      }
+ 
+}

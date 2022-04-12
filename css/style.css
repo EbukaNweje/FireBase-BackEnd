@@ -1,1 +1,110 @@
-#art{display: none;}
+*{
+      margin: 0;
+      padding: 0;
+}
+
+.Container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+img{
+      margin-top: 50px;
+      width: 300px;
+}
+
+.Title{
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+}
+
+.Title span{
+      font-size: 35px;
+}
+
+.register{
+      margin-top: 30px;
+      font-size: 23px;
+}
+
+.Form{
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+}
+
+label{
+      font-size: 18px;
+      font-weight: bold;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input{
+      width: 300px;
+      height: 35px;
+      border-radius: 5px;
+      border:1px solid lightgrey;
+      outline: none;
+      padding-left: 10px;
+      margin-bottom: 20px;
+}
+
+p{
+      font-size: 13px;
+      color: red;
+      font-weight: bold;
+      /* margin-bottom: 20px; */
+      display: none;
+}
+
+.payment{
+      border: none;
+}
+
+button{
+      height: 50px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+}
+
+h5{
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-bottom: 5px;
+}
+
+span{
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: bold;
+}
+
+.FormSubmit{
+      width: auto;
+      height: 25px;
+      background: green;
+      color: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      display: none;
+}

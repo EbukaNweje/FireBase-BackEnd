@@ -16,29 +16,45 @@ const firebaseConfig = {
 
     function submitForm(e){
       e.preventDefault()
-            let name = getElementVal('NM')
-            let password = getElementVal('PS')
+            let name = getElementVal('Name')
             let email = getElementVal('Email')
+            let phone = getElementVal('Phone')
+            let payment = getElementVal('payment')
 
-            saveData(name, password, email)
-            // console.log(name, password, email);
-            
-            document.getElementById("art").style.display = "block"
-            setTimeout(() => {
-                  document.getElementById("art").style.display = "none"
-            }, 3000);
-          document.getElementById('RegForms').reset()
+            if(!name){
+                  document.querySelector("#NameErro").style.display = "block"
+            }else if(!email){
+                  document.querySelector("#EmailErro").style.display = "block"
+            }else if(!phone){
+                  document.querySelector("#PhoneErro").style.display = "block"
+            }else if(!payment){
+                  document.querySelector("#ProofErro").style.display = "block"
+            }else{
+                  saveData(name, email, phone, payment)
+                  console.log(name, email, phone, payment);
+                  
+                  document.querySelector(".FormSubmit").style.display = "block"
+                  setTimeout(() => {
+                        document.querySelector(".FormSubmit").style.display = "none"
+                  }, 3000);
+                document.getElementById('RegForms').reset()
+            }
+
+           
     }
 
-    const saveData = (name, password, email) =>{
+    const saveData = (name, email, phone, payment) =>{
           const newDataFormDB = DataFormDB.push()
           newDataFormDB.set({
                 nameOfUser : name,
-                passwordOfUser : password,
-                emailOfUser : email
+                emailOfUser : email,
+                phoneOfUser : phone,
+                paymentOfUser : payment,
           })
+
     }
 
     const getElementVal = (id) =>{
           return document.getElementById(id).value
     }
+

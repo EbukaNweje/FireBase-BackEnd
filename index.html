@@ -5,23 +5,60 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/mobile.css">
+      <link rel="shortcut icon" href="./Image/logoicon.jpg" type="image/x-icon">
       <title>FirBase Text</title>
 </head>
 <body>
-     <form action="" id="RegForms">
-      <label for="">Name</label>
-      <input type="text" placeholder="Name" id="NM">
-      <label for="">PassWord</label>
-      <input type="password" placeholder="PassWord" id="PS">
-      <label for="">email</label>
-      <input type="email" placeholder="Email" id="Email">
+      <!-- <form action="" id="RegForms">
+            <label for="">Name</label>
+            <input type="text" placeholder="Name" id="NM">
+            <label for="">PassWord</label>
+            <input type="password" placeholder="PassWord" id="PS">
+            <label for="">email</label>
+            <input type="email" placeholder="Email" id="Email">
+      
+            <button type="submit">Submit</button>
+           </form>
+      
+           <div>
+                 <p id="art">Thanks For Filling this Form</p>
+           </div> -->
+      <div class="Container">
+            <img src="./Image/logo.png" alt="Logo">
+            <div class="Title">
+                  <h1>Welcome to</h1>
+                  <span>JavaScript and Firbase Master Class</span>
+            </div>
 
-      <button type="submit">Submit</button>
-     </form>
+            <h5 class="register">
+                  To Register Fill all this Information..
+            </h5>
 
-     <div>
-           <p id="art">Thanks For Filling this Form</p>
-     </div>
+            <form id="RegForms" class="Form">
+                  <div class="FormSubmit"><span>Your form have been submited successfully</span></div>
+                  <label for="name">Full Name:</label>
+                  <p id="NameErro">Enter Your Full Name*</p>
+                  <input type="text" placeholder="Enter your Full name" id="Name">
+                  <label for="email">Email Address:</label>
+                  <p id="EmailErro">Enter Your Email Address*</p>
+                  <input type="email" placeholder="Enter your Email Address" id="Email">
+                  <label for="phone">Phone Number:</label>
+                  <p id="PhoneErro">Enter Your Phone Number*</p>
+                  <input type="tel" placeholder="Enter your Phone Number" id="Phone">
+                  <h5>How To pay</h5>
+                  <span>
+                        Send your Money to <br>
+                        2116582128<br>
+                        Ebuka Favour Ezimah<br>
+                        and send the proof of payment
+                  </span>
+                  <label for="payment">Proof of Payment:</label>
+                  <p id="ProofErro">Enter Your Proof of Payment*</p>
+                  <input type="file"  id="payment" class="payment">
+                  <button type="submit">Submit</button>
+            </form>
+      </div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
       <!-- <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
